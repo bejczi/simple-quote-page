@@ -20,12 +20,15 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+* {
+	box-sizing: border-box;
+}
 html,
 body {
-  margin: 0;
   padding: 0;
   font-size: 100%;
   line-height: 1.5;
+  text-align: center;
 }
 
 body {
@@ -34,13 +37,13 @@ body {
   background: url('assets/freedom.jpg') no-repeat center;
   background-size: cover;
   color: #333;
+  margin: 6rem auto 1.5rem;
 }
 
 .wrapper {
   padding-top: 4rem;
   width: 90%;
   margin: 0 auto;
-  text-align: center;
 }
 
 .quote {
@@ -52,4 +55,27 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 1.5rem;
   font-style: italic;
+}
+
+.language {
+  margin-top: 2rem;
+}
+li{
+  display: inline-block;
+}
+/* ==== Mobil view ===== */
+@media (max-width: 768px){
+  .quote {
+    font-size: 1rem; 
+  }
+  .author {
+    font-size:0.75rem;
+  }
+  img {
+    width: 32px;
+    height: 32px;
+  }
+  li{
+    display: block;
+  }
 }
